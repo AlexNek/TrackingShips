@@ -1,4 +1,6 @@
-﻿namespace TrackingShips
+﻿using TrackingShips.Events;
+
+namespace TrackingShips
 {
     internal class Port
     {

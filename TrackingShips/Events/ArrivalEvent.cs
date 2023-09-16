@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace TrackingShips
+namespace TrackingShips.Events
 {
     internal class ArrivalEvent : DomainEvent
     {
