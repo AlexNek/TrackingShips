@@ -6,13 +6,13 @@ As I can not find the omplete working example, I decided to create it myself. so
 ## Base principle
 As usual we could use a simple classes for tracking ship movements
 
-![image](../Images/simpleService.gif)  
+![image](Images/simpleService.gif)  
 *Figure 1: A simple interface for tracking shipping movements.* © Martin Fowler
 
 - **pro**: easy implementation.  
 - **contra** stored final state only, hard to replay all actions again
 
-![image](../Images/simpleEventCd.gif)  
+![image](Images/simpleEventCd.gif)  
 *Figure 2: Using an event to capture the change.* © Martin Fowler
 
 - **pro**: easy to replay all actions again in case of error correction as all actions are stored. Changes to the domain object could be made only over events.  
