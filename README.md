@@ -1,7 +1,7 @@
 # Working example Event Sourcing
 ## Introduction
 Into Martin Fowler [blog post](https://martinfowler.com/eaaDev/EventSourcing.html) you can find some code pieces illustrated [Event Sourcing pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing).
-As I can not find the omplete working example, I decided to create it myself. some parts of the code was missing and some part i refactoring a little bit. In any case it an example, don't try to use it into production.
+As I can not find the complete working example, I decided to create it myself. some parts of the code was missing and some part i refactoring a little bit. In any case it an example, don't try to use it into production.
 
 ## Base principle
 As usual we could use a simple classes for tracking ship movements
