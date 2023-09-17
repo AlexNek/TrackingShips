@@ -19,11 +19,11 @@ namespace TrackingShips
         public void HandleArrival(ArrivalEvent ev)
         {
             Port = ev.Port;
+            Console.WriteLine($"ship '{Name}' has arrived at the port of {Port?.Name} ({Port?.Country}), date {ev.Occurred.ToShortDateString()}, cargo {_cargo.Count} units");
             foreach (Cargo c in _cargo)
             {
                 c.HandleArrival(ev);
             }
-            Console.WriteLine($"ship '{Name}' has arrived at the port of {Port?.Name} ({Port?.Country}), date {ev.Occurred.ToShortDateString()}, cargo {_cargo.Count} units");
         }
 
         public void HandleDeparture(DepartureEvent ev)

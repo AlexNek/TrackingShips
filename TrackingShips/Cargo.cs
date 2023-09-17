@@ -33,6 +33,7 @@ namespace TrackingShips
             if (Country.CANADA == ev.Port.Country)
             {
                 _hasBeenInCanada = true;
+                Console.WriteLine($"cargo '{Id}' has been in Canada");
             }
         }
 
