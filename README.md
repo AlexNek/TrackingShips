@@ -19,9 +19,11 @@ As usual we could use a simple classes for tracking ship movements
 
 - **pro**: easy to replay all actions again in case of error correction as all actions are stored.
 Changes to the domain object could be made only over events.
-- **contra** not so easy implmentation and understanding.
+- **contra** not so easy implmentation and understanding. 
+Connection to exteranl systerm is not so easy. Version changing over the time is not so easy.
 
-Lets imagine that we have an error in production system then we could replay all stored events into deployemnt and debug it.  
+Lets imagine that we have an error in production system then we could replay all stored events into deployemnt and debug it.
+In addition, we could set/see our system state to any time before or we could use storedevents for complrtr different system und different reason.
 
 For example a simple model is using - ships that carry cargo and move between ports.
 ![image](Images/shipDomainCd.gif)  
@@ -62,3 +64,10 @@ ship 'King Roy' departed from port San Francisco (US), date 07.11.2005, cargo 1 
 ship 'King Roy' has arrived at the port of Vancouver (CA), date 01.12.2005, cargo 1 units
 cargo 'Clean Code' has been in Canada
 ```
+
+## Useful links
+
+- [Event Sourcing • Martin Fowler • YOW! 2016](https://www.youtube.com/watch?v=ck7t592bvBg)
+- [Event Sourcing • Greg Young • GOTO 2014](https://www.youtube.com/watch?v=8JKjvY4etTY)
+- [Why Event Sourced Systems Fail • Greg Young • 2020](https://www.youtube.com/watch?v=FKFu78ZEIi8)
+- [Event Sourcing : what could possibly go wrong? • Andrzej Ludwikowski • 2022](https://www.youtube.com/watch?v=MYD4rrIqDhA)
