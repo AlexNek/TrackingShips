@@ -42,7 +42,7 @@ When we try to analyze the code then we can see a little bit complicated depende
 
 ## How to run example
 
-First read the Marting Fowler blog, the start the example
+First read the Marting Fowler blog, then start the example.
 Clone the code, open solution, run console application. You can see the follwing output:
 ```
 Martin Fowler event sourcing example:
