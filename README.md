@@ -17,8 +17,11 @@ As usual we could use a simple classes for tracking ship movements
 ![image](Images/simpleEventCd.gif)  
 *Figure 2: Using an event to capture the change.* © Martin Fowler
 
-- **pro**: easy to replay all actions again in case of error correction as all actions are stored. Changes to the domain object could be made only over events.  
+- **pro**: easy to replay all actions again in case of error correction as all actions are stored.
+Changes to the domain object could be made only over events.
 - **contra** not so easy implmentation and understanding.
+
+Lets imagine that we have an error in production system then we could replay all stored events into deployemnt and debug it.  
 
 For example a simple model is using - ships that carry cargo and move between ports.
 ![image](Images/shipDomainCd.gif)  
