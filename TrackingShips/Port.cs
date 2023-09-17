@@ -9,13 +9,12 @@ namespace TrackingShips
             Name = name;
             Country = country;
         }
-        //private const Port AT_SEA = VALUE;
 
-        public void HandleArrival(ArrivalEvent ev)
-        {
-            ev.Ship.Port = this;
-            Registry.CustomsNotificationGateway.Notify(ev.Occurred, ev.Ship, ev.Port);
-        }
+        //public void HandleArrival(ArrivalEvent ev)
+        //{
+        //    ev.Ship.Port = this;
+        //    Registry.CustomsNotificationGateway.Notify(ev.Occurred, ev.Ship, ev.Port);
+        //}
 
         public string Name { get; init; }
 
